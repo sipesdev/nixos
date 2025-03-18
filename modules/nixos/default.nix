@@ -19,6 +19,7 @@
     ffmpeg
     mpv
     feh
+    seahorse
     firefox
   ];
 
@@ -32,6 +33,7 @@
 
   # Default services
   hardware.bluetooth.enable = true;
+  services.gnome.gnome-keyring.enable = true;
   services.printing.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
