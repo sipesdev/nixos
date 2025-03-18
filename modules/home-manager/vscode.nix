@@ -27,8 +27,8 @@
         "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "catppuccin-mocha";
         "update.mode" = "none";
-        "editor.minimap.enabled" = "false";
-        "editor.stickyScroll.enabled" = "false";
+        "editor.minimap.enabled" = false;
+        "editor.stickyScroll.enabled" = false;
       };
     };
   };
