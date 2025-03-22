@@ -13,6 +13,7 @@
     ../../modules/home-manager/vscode.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/theme.nix
+    ../../modules/home-manager/firefox.nix
   ];
 
   # This value determines the Home Manager release that your configuration is
