@@ -20,7 +20,7 @@
       position = "top";
       modules-left = [ "clock" "hyprland/workspaces" ];
       modules-center = [ "hyprland/window" ];
-      modules-right = [ "tray" "battery" ];
+      modules-right = [ "tray" "pulseaudio" "battery" ];
 
       # Custom modules
       battery = {
@@ -43,7 +43,21 @@
         max-length = 64;
         separate-outputs = true;
       };
+      "pulseaudio" = {
+        format = "{icon} {volume}%";
+        format-icons = {
+          headphone = "";
+          phone = "";
+          phone-muted = "";
+          portable = "";
+          car = "";
+          default = [ "" "" ];
+        };
+        format-muted = "󰝟";
+        on-clicl = "pavucontrol";
+      };
       "clock" = {
+        format = "{:%I:%M %p}";
         format-alt = "{:%m-%d-%Y}";
         tooltip-format = "<tt>{calendar}</tt>";
         calendar = {

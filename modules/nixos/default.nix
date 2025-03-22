@@ -33,6 +33,7 @@
 
   # Default services
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
   services.gnome.gnome-keyring.enable = true;
   services.printing.enable = true;
   services.gvfs.enable = true;

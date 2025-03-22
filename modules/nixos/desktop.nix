@@ -11,10 +11,10 @@
     adwaita-icon-theme
     waybar
     mako
+    pavucontrol
     libnotify
     rofi-wayland
     networkmanagerapplet
-    volumeicon
     xdg-desktop-portal-gtk
   ];
 
@@ -58,6 +58,7 @@
 
   # Services
   services.hypridle.enable = true;
+  services.blueman.enable = true;
   
   # Portals
   xdg.portal.enable = true;
