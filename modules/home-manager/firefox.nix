@@ -32,7 +32,7 @@
         ublock-origin
         privacy-badger
         decentraleyes
-        return-youtube-dislike
+        return-youtube-dislikes
       ];
       settings = {
         # Privacy
