@@ -40,7 +40,7 @@
     image = ./wallpapers/desktop.jpg;
     polarity = "dark";
     cursor = {
-      size = 24
+      size = 24;
       name = "Adwaita";
     };
     fonts = {
