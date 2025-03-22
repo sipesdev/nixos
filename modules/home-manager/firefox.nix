@@ -12,10 +12,13 @@
         Cryptomining = true;
         Fingerprinting = true;
       };
+      AutofillCreditCardEnabled = false;
+      AutofillAddressEnabled = false;
       DisablePocket = true;
       DisableFirefoxAccounts = true;
       DisableAccounts = true;
       DisableFirefoxScreenshots = true;
+      DisableFormHistory = true;
       OverrideFirstRunPage = "";
       OverridePostUpdatePage = "";
       DontCheckDefaultBrowser = true;
@@ -27,7 +30,7 @@
       id = 0;
       name = "default";
       isDefault = true;
-      extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
         bitwarden
         ublock-origin
         privacy-badger

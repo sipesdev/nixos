@@ -31,6 +31,9 @@
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
     MOZ_ENABLE_WAYLAND = "1";
+    XDG_CONFIG_HOME = "$HOME/.config";
+    XDG_DATA_HOME = "$HOME/.local/share";
+    XDG_CACHE_HOME = "$HOME/.cache";
   };
 
   # Stylix
@@ -42,6 +45,7 @@
     cursor = {
       size = 24;
       name = "Adwaita";
+      package = pkgs.adwaita-icon-theme;
     };
     fonts = {
       monospace = {
