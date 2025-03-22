@@ -38,8 +38,11 @@
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     image = ./wallpapers/desktop.jpg;
-    cursor.name = "Adwaita";
     polarity = "dark";
+    cursor = {
+      size = 24
+      name = "Adwaita";
+    };
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;
