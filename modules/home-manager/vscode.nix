@@ -23,6 +23,7 @@
         catppuccin.catppuccin-vsc-icons
       ];
       userSettings = {
+        "password-store" = "gnome";
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "catppuccin-mocha";

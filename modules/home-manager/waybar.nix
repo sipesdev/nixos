@@ -4,15 +4,15 @@
   programs.waybar = {
     enable = true;
     style = ''
-      window#waybar {
-        background-color: transparent;
-        color: #ffffff;
-        font-family: sans-serif;
-        font-size: 16px;
-        border: none;
-        box-shadow: none;
-        padding: 0 10px;
-      }
+        window#waybar {
+          background-color: transparent;
+          color: #ffffff;
+          font-family: "JetBrainsMono Nerd Font", sans-serif;
+          font-size: 16px;
+          border: none;
+          box-shadow: none;
+          padding: 0 10px;
+        }
     '';
     settings = [{
       height = 30;
@@ -20,7 +20,7 @@
       position = "top";
       modules-left = [ "clock" "hyprland/workspaces" ];
       modules-center = [ "hyprland/window" ];
-      modules-right = [ "tray" "pulseaudio" "battery" ];
+      modules-right = [ "pulseaudio" "tray" "battery" ];
 
       # Custom modules
       battery = {
@@ -51,10 +51,10 @@
           phone-muted = "";
           portable = "";
           car = "";
-          default = [ "" "" ];
+          default = [ "󰕿" "󰖀" "󰕾" ];
         };
         format-muted = "󰝟";
-        on-clicl = "pavucontrol";
+        on-click = "pavucontrol";
       };
       "clock" = {
         format = "{:%I:%M %p}";
