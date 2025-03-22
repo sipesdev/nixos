@@ -43,6 +43,9 @@
         max-length = 64;
         separate-outputs = true;
       };
+      "tray" = {
+        spacing = 10;
+      };
       "pulseaudio" = {
         format = "{icon} {volume}%";
         format-icons = {
