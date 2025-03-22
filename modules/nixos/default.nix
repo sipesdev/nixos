@@ -4,6 +4,14 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # NixOS garbage collection
+  nix.optimise.automatic = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";
+  };
+
   # Install some default packages
   environment.systemPackages = with pkgs; [
     neovim
