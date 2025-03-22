@@ -24,17 +24,17 @@
         "default-off"; # alternatives: "always", "never" or "default-on"
       SearchBar = "unified"; # alternative: "separate"
     };
-    extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-      ublock-origin
-      privacy-badger
-      decentraleyes
-      bitwarden
-    ];
     profiles = {
       default = {
         id = 0;
         name = "default";
         isDefault = true;
+        extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
+          ublock-origin
+          privacy-badger
+          decentraleyes
+          bitwarden
+        ];
         settings = {
           # Privacy
           "extensions.pocket.enabled" = false;
