@@ -42,4 +42,7 @@
       };
     };
   };
+
+  # Stylix
+  stylix.targets.vscode.enable = false;
 }

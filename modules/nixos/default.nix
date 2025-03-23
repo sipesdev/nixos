@@ -15,7 +15,7 @@
   # Install some default packages
   environment.systemPackages = with pkgs; [
     neovim
-    dotnet-sdk
+    dotnet-sdk_9
     base16-schemes
     neofetch
     wget

@@ -65,4 +65,7 @@
       };
     };
   };
+
+  # Stylix
+  stylix.targets.firefox.enable = false;
 }
