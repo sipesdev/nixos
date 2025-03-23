@@ -75,6 +75,21 @@
     };
   };
 
+  # CPU laptop
+  services.auto-cpufreq = {
+    enable = true;
+    settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "never";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "auto";
+      };
+    };
+  };
+
   # Nvidia laptop
   hardware.nvidia.prime = {
     sync.enable = true;
@@ -83,7 +98,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    brightnessctl
+    brightnessctl # Should this be installed locally??
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
