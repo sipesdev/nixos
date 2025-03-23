@@ -24,10 +24,19 @@
       ];
       userSettings = {
         "password-store" = "gnome";
+        "update.mode" = "none";
+
+        # Theming
+        "window.titleBarStyle" = "native";
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "catppuccin-mocha";
-        "update.mode" = "none";
+        
+        # Copilot bullshit
+        "chat.commandCenter.enabled" = false;
+        "chat.experimental.statusIndicator.enabled" = false;
+
+        # Personal settings
         "editor.minimap.enabled" = false;
         "editor.stickyScroll.enabled" = false;
       };
