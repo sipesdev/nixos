@@ -97,6 +97,7 @@
     nvidiaBusId = "PCI:1:0:0";
   };
 
+  # Laptop specific packages
   environment.systemPackages = with pkgs; [
     brightnessctl # Should this be installed locally??
   ];
