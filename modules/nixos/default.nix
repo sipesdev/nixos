@@ -46,4 +46,9 @@
   services.printing.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
+
+  # Disable wake from PCIE
+  services.udev.extraRules = ''
+  ACTION=="add", SUBSYSTEM=="pci", DRIVER=="pcieport", ATTR{power/wakeup}="disabled"
+  '';
 }
