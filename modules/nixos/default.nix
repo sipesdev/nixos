@@ -21,7 +21,7 @@
     wget
     git
     htop
-    nvtop
+    nvtopPackages.full
     lshw
     cmatrix
     nixfmt
