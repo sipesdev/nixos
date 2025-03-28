@@ -75,6 +75,16 @@
     };
   };
 
+  # Laptop environment variables
+  environment.sessionVariables = rec {
+    AW_DRM_DEVICES = "/dev/dri/card1:/dev/dri/card2";
+  };
+
+  # The LID
+  services.logind.lidSwitch = "hibernate";
+  services.logind.lidSwitchExternalPower = "lock";
+  services.logind.lidSwitchDocked = "ignore";
+
   # CPU laptop
   services.thermald.enable = true;
   services.auto-cpufreq = {
@@ -95,6 +105,7 @@
   hardware.nvidia = {
     powerManagement.enable = false;
     powerManagement.finegrained = false;
+    dynamicBoost.enable = true;
     prime.sync.enable = true;
     prime.intelBusId = "PCI:0:2:0";
     prime.nvidiaBusId = "PCI:1:0:0";
@@ -105,11 +116,12 @@
     on-the-go.configuration = {
       system.nixos.tags = [ "on-the-go" ];
       hardware.nvidia = {
-        powerManagement.enable = lib.mkForce true;
-        powerManagement.finegrained = lib.mkForce true;
+        dynamicBoost.enable = lib.mkForce false;
         prime.offload.enable = lib.mkForce true;
         prime.offload.enableOffloadCmd = lib.mkForce true;
         prime.sync.enable = lib.mkForce false;
+        powerManagement.enable = lib.mkForce true;
+        powerManagement.finegrained = lib.mkForce true;
       };
     };
   };

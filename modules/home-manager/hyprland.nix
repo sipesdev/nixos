@@ -19,19 +19,23 @@
         active_opacity = "1.0";
         inactive_opacity = "0.8";
 
-        shadow = {
+        shadow = { # Disable for laptop
           enabled = "true";
           range = "4";
           render_power = "3";
         };
 
-        blur = {
+        blur = { # Disable for laptop
           enabled = "true";
           size = "3";
           passes = "1";
           vibrancy = "0.1696";
         };
       };
+      misc = {
+        vfr = "true";
+      };
+
       "$mod" = "SUPER";
       bind = [
         # Control

@@ -20,7 +20,8 @@
     neofetch
     wget
     git
-    btop
+    htop
+    nvtop
     lshw
     cmatrix
     nixfmt
