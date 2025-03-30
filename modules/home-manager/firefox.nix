@@ -26,9 +26,9 @@
       DisplayMenuBar = "default-off"; # alternatives: "always", "never" or "default-on"
       SearchBar = "unified"; # alternative: "separate"
     };
-    profiles.default = {
+    profiles.michael = {
       id = 0;
-      name = "default";
+      name = "michael";
       isDefault = true;
       extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
         bitwarden
@@ -37,6 +37,7 @@
         decentraleyes
         return-youtube-dislikes
       ];
+      extensions.force = true;
       settings = {
         # Privacy
         "extensions.pocket.enabled" = false;
@@ -52,20 +53,23 @@
 
         # Basics
         "signon.rememberSignons" = false;
-        "widget.use-xdg-desktop-portal.file-picker" = 1;
         "browser.aboutConfig.showWarning" = false;
+        "browser.taskbar.lists.enabled" = false;
+        "browser.tabs.inTitlebar" = 0;
         "browser.compactmode.show" = true;
         "browser.cache.disk.enable" = false; # Be kind to hard drive
         "extensions.autoDisableScopes" = 0;
 
-        # Firefox 75+ remembers the last workspace it was opened on as part of its session management.
-        # This is annoying, because I can have a blank workspace, click Firefox from the launcher, and
-        # then have Firefox open on some other workspace.
+        # Tiling WM quirks
         "widget.disable-workspace-management" = true;
+        "widget.use-xdg-desktop-portal.file-picker" = 2;
       };
     };
   };
 
   # Stylix
-  stylix.targets.firefox.enable = false;
+  stylix.targets.firefox.enable = true;
+  stylix.targets.firefox.profileNames = [ "michael" ];
+  stylix.targets.firefox.colorTheme.enable = true;
+  stylix.targets.firefox.firefoxGnomeTheme.enable = true;
 }

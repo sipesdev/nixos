@@ -15,7 +15,7 @@
         }
     '';
     settings = [{
-      height = 30;
+      height = 28;
       layer = "top";
       position = "top";
       modules-left = [ "clock" "hyprland/workspaces" ];
@@ -62,9 +62,13 @@
       "clock" = {
         format = "{:%I:%M %p}";
         format-alt = "{:%m-%d-%Y}";
-        tooltip-format = "<tt>{calendar}</tt>";
+        tooltip-format = "<tt><small>{calendar}</small></tt>";
         calendar = {
-          format = { today = "<span color='#fAfBfC'><b>{}</b></span>"; };
+          mode = "month";
+          format = { 
+            months = "<big>{}</big>";
+            today = "<span color='red'><b>{}</b></span>"; 
+          };
         };
       };
     }];
