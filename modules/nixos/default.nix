@@ -30,6 +30,7 @@
     feh
     seahorse
     firefox
+    bitwarden-desktop
   ];
 
   # Thunar
