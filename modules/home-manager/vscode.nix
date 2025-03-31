@@ -18,6 +18,7 @@
         rust-lang.rust-analyzer
         tamasfe.even-better-toml
         jnoortheen.nix-ide
+        arrterian.nix-env-selector
         continue.continue
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons

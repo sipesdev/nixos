@@ -31,6 +31,7 @@
     seahorse
     firefox
     bitwarden-desktop
+    rquickshare
   ];
 
   # Thunar
