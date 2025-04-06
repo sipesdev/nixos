@@ -15,14 +15,11 @@
     libnotify
     rofi-wayland
     networkmanagerapplet
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
   ];
 
   # Enable Hyprland
   programs.hyprland = {
     enable = true;
-    #package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     #portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
     xwayland.enable = true;
   };  
@@ -69,6 +66,14 @@
   services.blueman.enable = true;
   
   # Portals
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk
+      ];
+      gtkUsePortal = true;
+    };
+  };
 }
