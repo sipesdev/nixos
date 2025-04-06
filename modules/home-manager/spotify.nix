@@ -1,5 +1,9 @@
 { pkgs, lib, config, inputs, ... }:
 
+# Define spicePkgs for Spicetify
+let 
+  spicePkgs = inputs.spicetify-nix.packages.${pkgs.system};
+in 
 {
   programs.spicetify =
   {
