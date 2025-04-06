@@ -32,7 +32,7 @@
     firefox
     bitwarden-desktop
     rquickshare
-    spotify
+    slack
   ];
 
   # Thunar
