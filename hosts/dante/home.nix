@@ -14,6 +14,8 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/theme.nix
     ../../modules/home-manager/firefox.nix
+    ../../modules/home-manager/spotify.nix
+    ../../modules/home-manager/thunderbird.nix
   ];
 
   # This value determines the Home Manager release that your configuration is

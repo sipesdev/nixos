@@ -32,6 +32,7 @@
     firefox
     bitwarden-desktop
     rquickshare
+    spotify
   ];
 
   # Thunar
@@ -49,6 +50,10 @@
   services.printing.enable = true;
   services.gvfs.enable = true;
   services.tumbler.enable = true;
+
+  # Firewall
+  networking.firewall.allowedTCPPorts = [ 57621 ];
+  networking.firewall.allowedUDPPorts = [ 5353 ];
 
   # Disable wake from PCIE
   services.udev.extraRules = ''

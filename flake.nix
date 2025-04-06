@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -23,6 +24,7 @@
       modules = [
         ./hosts/dante/configuration.nix
         inputs.stylix.nixosModules.stylix
+        inputs.spicetify-nix.nixosModules.default
         inputs.home-manager.nixosModules.default
       ];
     };

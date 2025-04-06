@@ -16,6 +16,7 @@
     rofi-wayland
     networkmanagerapplet
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
   ];
 
   # Enable Hyprland

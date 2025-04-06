@@ -19,7 +19,6 @@
         tamasfe.even-better-toml
         jnoortheen.nix-ide
         arrterian.nix-env-selector
-        continue.continue
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
       ];
@@ -32,10 +31,6 @@
         "workbench.colorTheme" = "Catppuccin Mocha";
         "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
         "workbench.iconTheme" = "catppuccin-mocha";
-        
-        # Copilot bullshit
-        "chat.commandCenter.enabled" = false;
-        "chat.experimental.statusIndicator.enabled" = false;
 
         # Personal settings
         "editor.minimap.enabled" = false;
