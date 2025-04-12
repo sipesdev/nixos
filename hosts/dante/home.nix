@@ -10,8 +10,7 @@
   imports = [
     inputs.spicetify-nix.homeManagerModules.default
     ../../modules/home-manager/hyprland.nix
-    #../../modules/home-manager/waybar.nix
-    ../../modules/home-manager/eww.nix
+    ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/vscode.nix
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/theme.nix
