@@ -83,7 +83,7 @@
       # Autostart
       exec-once = [
         "systemctl --user start hyprpolkitagent"
-        "waybar & nm-applet --indicator & blueman-applet & mako & hypridle"
+        "eww daemon & nm-applet --indicator & blueman-applet & mako & hypridle"
       ];
 
       # Fixes
