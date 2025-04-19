@@ -93,4 +93,16 @@
       ];
     };
   };
+
+  # Wallpaper
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      ipc = "true";
+      splash = false;
+      preload = [
+        "../nixos/wallpapers/desktop.jpg"
+      ];
+    };
+  };
 }

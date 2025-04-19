@@ -31,6 +31,17 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  # Touchpad
+  services.xserver.libinput.enable = true;
+  services.xserver.libinput.tapping = true;
+  services.xserver.libinput.middleEmulation = true;
+  services.xserver.libinput.naturalScrolling = false;
+  services.xserver.synaptics.enable = false;
+  services.libinput.enable = true;
+  # Avoid touchpad click to tap (clickpad) bug. For more detail see:
+  # https://wiki.archlinux.org/title/Touchpad_Synaptics#Touchpad_does_not_work_after_resuming_from_hibernate/suspend
+  boot.kernelParams = [ "psmouse.synaptics_intertouch=0" ];
+
   # Enable networking
   networking.networkmanager.enable = true;
 
