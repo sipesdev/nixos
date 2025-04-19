@@ -20,6 +20,7 @@
     neofetch
     wget
     git
+    gh
     htop
     nvtopPackages.full
     lshw
