@@ -62,6 +62,7 @@
   };
 
   # Services
+  services.displayManager.ly.enable = true;
   services.hypridle.enable = true;
   services.blueman.enable = true;
   
