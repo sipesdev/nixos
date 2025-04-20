@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     stylix.url = "github:danth/stylix";
+    nixcord.url = "github:kaylorben/nixcord";
     
     spicetify-nix = {
       url = "github:Gerg-L/spicetify-nix";

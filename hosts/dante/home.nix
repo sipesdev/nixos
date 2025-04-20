@@ -9,6 +9,7 @@
   # Imports
   imports = [
     inputs.spicetify-nix.homeManagerModules.default
+    inputs.nixcord.homeManagerModules.nixcord
     ../../modules/home-manager/hyprland.nix
     ../../modules/home-manager/waybar.nix
     ../../modules/home-manager/vscode.nix
@@ -17,6 +18,7 @@
     ../../modules/home-manager/firefox.nix
     ../../modules/home-manager/spotify.nix
     ../../modules/home-manager/thunderbird.nix
+    ../../modules/home-manager/discord.nix
   ];
 
   # This value determines the Home Manager release that your configuration is

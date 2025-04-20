@@ -14,7 +14,6 @@
       ../../modules/nixos/desktop.nix
       ../../modules/nixos/sound.nix
       ../../modules/nixos/terminal.nix
-      inputs.home-manager.nixosModules.default
     ];
 
   # Bootloader.
