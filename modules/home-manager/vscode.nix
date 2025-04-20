@@ -7,12 +7,12 @@
   };
 
   home.file = {
-    # Reverse symlink to update home files in my git directory to sync
-    "repos/dotfiles/Code/User/settings.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Code/User/settings.json";
+    ".config/Code/User/settings.json" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/Code/User/settings.json";
     };
-    "repos/dotfiles/.vscode/extensions/extensions.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.vscode/extensions/extensions.json";
+    ".vscode/extensions" = {
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/.vscode/extensions";
+      recursive = true;
     };
   };
 
