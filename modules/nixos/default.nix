@@ -34,6 +34,7 @@
     bitwarden-desktop
     rquickshare
     slack
+    zoom
   ];
 
   # Thunar
